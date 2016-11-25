@@ -4,15 +4,17 @@ php:
   - 7.0
   - 7.1
 
-cache:
-  directories:
-    - $HOME/vendor
-
 sudo: false
 
-before_script:
+cache:
+  directories:
+    - $HOME/.composer/cache
+
+# XDebug slows down Composer ... our run-tests.sh script will enable it later
+before_install:
   - phpenv config-rm xdebug.ini
+
+before_script:
   - sh -c "composer install --no-progress"
 
 script: ./run-tests.sh
-
