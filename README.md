@@ -17,6 +17,8 @@ class Narf\Niceware\Niceware {
 	public static function generatePassphrase(int $size): string;
 	public static function bytesToPassphrase(string $bytes): string;
 	public static function passphraseToBytes(string $passphrase): string;
+
+}
 ```
 
 *Note: The parameters types are not actually in the method signatures, but
