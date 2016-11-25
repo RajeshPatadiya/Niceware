@@ -1,5 +1,7 @@
 # Niceware for PHP
 
+[![Build Status](https://travis-ci.org/narfbg/Niceware.svg?branch=master)](https://travis-ci.org/narfbg/Niceware)
+
 PHP port of [npm: niceware](https://www.npmjs.com/package/niceware) ([GitHub: diracdeltas/niceware](https://github.com/diracdeltas/niceware))
 
 ## Why?
