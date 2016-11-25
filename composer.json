@@ -2,6 +2,7 @@
 	"name": "narf/niceware",
 	"description": "Niceware library for PHP",
 	"type": "library",
+	"license": "MIT",
 	"keywords": [
 		"niceware", "diceware", "passphrase", "password", "generator", "password generator", "dictionary", "crypto", "cryptography", "random", "entropy", "encryption"
 	],
