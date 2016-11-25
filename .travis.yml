@@ -3,10 +3,21 @@ language: php
 php:
   - 7.0
   - 7.1
+  - nightly
+
+matrix:
+  allow_failures:
+    - php: nightly
+
+cache:
+  directories:
+    - $HOME/vendor
 
 sudo: false
 
 before_script:
-  - sh -c "composer install --dev --no-progress"
+  - phpenv config-rm xdebug.ini
+  - sh -c "composer install --no-progress"
 
-script: vendor/bin/phpunit --no-configuration --coverage-text --whitelist=src/ tests/
+script: ./run-tests.sh
+
